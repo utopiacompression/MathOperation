@@ -24,7 +24,7 @@ catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```bash
 roscore
 ```
-In a new terminal,
+In a new session,
 ```bash
 roslaunch math_operation math_operation.launch
 ```
