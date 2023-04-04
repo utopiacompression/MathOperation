@@ -1,0 +1,10 @@
+<launch>
+  <!-- Load parameters from the inputs.yaml file -->
+  <rosparam file="$(find math_operation)/config/inputs.yaml" command="load"/>
+
+  <!-- Start the num_publisher node -->
+  <node name="num_publisher" type="num_publisher" pkg="math_operation" output="screen"/>
+
+  <!-- Start the num_subscriber node -->
+  <node name="num_subscriber" type="num_subscriber" pkg="math_operation" output="screen"/>
+</launch>
