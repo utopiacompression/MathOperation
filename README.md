@@ -1,5 +1,5 @@
 # MathOperation
-A ROS tutorial package includes a publisher and a subscriber.
+A ROS tutorial package including a publisher and a subscriber.
 
 ## How to install
 1. Download the code
