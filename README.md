@@ -1,5 +1,9 @@
-# MathOperation
-A ROS tutorial package including a publisher and a subscriber.
+# ROS Tutorials
+This workspace contains two tutorial related packages: _math_operation_ and _turtlesim_draw_shapes_.
+
+_math_operation_ package contains two basic C++ nodes, which perform custom message (named _mathop_) publishing/subscribing tasks in ROS. 
+
+_turtlesim_draw_shapes_ package contains C++ nodes that generate geometry_msgs and pass them to _turtlesim_node_. Those _geometry_msgs_ contains velocity instructions for turtle to move in straight lines, circles, or squares.
 
 ## How to install
 1. Download the code
@@ -19,8 +23,8 @@ catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```bash
 ./devel/setup.bash
 ```
-
 ## How to run
+### math_operation
 ```bash
 roscore
 ```
@@ -29,7 +33,12 @@ In a new session,
 roslaunch math_operation math_operation.launch
 ```
 
-## About yaml file
-The yaml files are placed under the package folder (i.e., math_operation/inputs.yaml) and the config folder (i.e., math_operation/config/inputs.yaml). They are identical.
+# turtlesim_draw_shapes
+```bash
+roscore
+```
+In a new session,
+```bash
+roslaunch turtlesim_draw_shapes <straight.launch/circle.launch/square.launch>
+```
 
-When running the program, there is a known issue that the publisher node cannot find the path of yaml file by a relative path. One solution is to place the yaml file to the Desktop folder and use a absolute path to locate it). This is how this project solved the problem. Therefore, if encountering YAML::BadFile exception, copy and paste the yaml file to your Desktop.
