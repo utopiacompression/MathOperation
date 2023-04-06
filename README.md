@@ -19,6 +19,8 @@ If this leads to an error as python3 is not default version, use
 ```bash
 catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```
+_If catkin_make throws the exception that it cannot find "math_operation/mathop.h", run the command twice more until it succeeds._
+
 4. Enable env
 ```bash
 ./devel/setup.bash
