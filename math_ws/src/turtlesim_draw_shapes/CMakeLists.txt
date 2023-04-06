@@ -211,6 +211,9 @@ target_link_libraries(draw_straight ${catkin_LIBRARIES})
 
 add_executable(draw_circle src/draw_circle.cpp)
 target_link_libraries(draw_circle ${catkin_LIBRARIES})
+
+add_executable(draw_square src/draw_square.cpp)
+target_link_libraries(draw_square ${catkin_LIBRARIES})
 # add_executable(draw_square src/draw_square.cpp)
 # target_link_libraries(draw_square ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 # add_dependencies(draw_square turtlesim_gencpp)

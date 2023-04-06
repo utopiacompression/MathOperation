@@ -2,7 +2,7 @@
 #include <geometry_msgs/Twist.h>
 
 int main(int argc, char** argv) {
-    ros::init(argc, argv, "curcle_turtle");
+    ros::init(argc, argv, "circle_turtle");
     ros::NodeHandle n;
 
     ros::Publisher twist_pub = n.advertise<geometry_msgs::Twist>("turtle1/cmd_vel", 1000);
