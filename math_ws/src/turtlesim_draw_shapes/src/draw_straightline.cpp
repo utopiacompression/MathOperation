@@ -2,7 +2,7 @@
 #include <geometry_msgs/Twist.h>
 
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "straight_turtle");
+  ros::init(argc, argv, "straightline_turtle");
   ros::NodeHandle n;
 
   // create a publisher to relay the twist msg

@@ -1,7 +1,0 @@
-<launch>
-  <!-- Launch the turtlesim node -->
-  <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node"/>
-
-  <rosparam command="load" file="$(find turtlesim_draw_shapes)/config/straight_params.yaml" />
-  <node name="straight_turtle" pkg="turtlesim_draw_shapes" type="draw_straight" />
-</launch>
