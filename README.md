@@ -11,7 +11,7 @@ _turtlesim_draw_shapes_ package contains C++ nodes that generate geometry_msgs a
 ```bash
 cd math_ws
 ```
-3. Cmake
+3. CMake
 ```bash
 catkin_make
 ```
