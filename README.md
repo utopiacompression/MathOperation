@@ -39,6 +39,6 @@ roscore
 ```
 In a new session,
 ```bash
-roslaunch turtlesim_draw_shapes <straight.launch/circle.launch/square.launch>
+roslaunch turtlesim_draw_shapes <straightline.launch/circle.launch/square.launch>
 ```
 
