@@ -1,6 +1,5 @@
 #include "ros/ros.h"
 #include "math_operation/mathop.h"
-#include <yaml-cpp/yaml.h>
 
 int main(int argc, char **argv) {
 
@@ -10,10 +9,11 @@ int main(int argc, char **argv) {
     ros::Publisher num1_pub = n.advertise<math_operation::mathop>("/do_math", 1000);
     ros::Rate loop_rate(10);
 
-    YAML::Node inputs = YAML::LoadFile("../math_ws/src/math_operation/config/inputs.yaml");
-    float num1 = inputs["num1"].as<float>();
-    float num2 = inputs["num2"].as<float>();
-    std::string op = inputs["op"].as<std::string>();
+    float num1, num2;
+    std::string op;
+    n.getParam("num1", num1);
+    n.getParam("num2", num2);
+    n.getParam("op", op);
 
     // Create the message
     math_operation::mathop msg;
